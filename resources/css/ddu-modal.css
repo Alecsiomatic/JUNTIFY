@@ -1,0 +1,136 @@
+/* Animaciones para el modal DDU */
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-bounce-in {
+    animation: bounce-in 0.6s ease-out;
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.3s ease-out;
+}
+
+/* Estilos específicos del modal DDU */
+.ddu-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    backdrop-filter: blur(4px);
+}
+
+.ddu-modal-content {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 28rem;
+    margin: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: scale(1);
+    transition: all 0.2s ease-out;
+}
+
+.ddu-modal-icon {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #fef2f2;
+    margin-bottom: 1rem;
+}
+
+.ddu-modal-icon svg {
+    height: 2rem;
+    width: 2rem;
+    color: #dc2626;
+}
+
+.ddu-modal-title {
+    font-family: 'Area InkTrap', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.ddu-modal-message {
+    font-family: 'Lato', sans-serif;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.ddu-modal-message p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.ddu-modal-button {
+    width: 100%;
+    background: linear-gradient(135deg, #6F78E4 0%, #6DDEDD 100%);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    outline: none;
+    box-shadow: 0 10px 25px -12px rgba(111, 120, 228, 0.4);
+}
+
+.ddu-modal-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px -12px rgba(111, 120, 228, 0.6);
+}
+
+.ddu-modal-button:focus {
+    outline: 2px solid #6DDEDD;
+    outline-offset: 2px;
+}
+
+.ddu-modal-button span {
+    font-family: 'Zuume', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+}
+
+/* Transiciones para cerrar el modal */
+.ddu-modal-closing {
+    opacity: 0;
+    transform: scale(0.95);
+}

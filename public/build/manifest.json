@@ -1,0 +1,35 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-sW4J-VeT.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/dashboard.css": {
+    "file": "assets/dashboard-WLsIlxdI.css",
+    "src": "resources/css/dashboard.css",
+    "isEntry": true
+  },
+  "resources/css/ddu-modal.css": {
+    "file": "assets/ddu-modal-DgE7HrHE.css",
+    "src": "resources/css/ddu-modal.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CWmVnECS.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/dashboard.js": {
+    "file": "assets/dashboard-YVdhpzsO.js",
+    "name": "dashboard",
+    "src": "resources/js/dashboard.js",
+    "isEntry": true
+  },
+  "resources/js/ddu-modal.js": {
+    "file": "assets/ddu-modal-BuliF14E.js",
+    "name": "ddu-modal",
+    "src": "resources/js/ddu-modal.js",
+    "isEntry": true
+  }
+}

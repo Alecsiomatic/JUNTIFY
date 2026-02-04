@@ -1,0 +1,46 @@
+/* Importación de Google Fonts - Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS para colores DDU */
+:root {
+    --ddu-lavanda: #6F78E4;
+    --ddu-aqua: #6DDEDD;
+    --ddu-gradient: linear-gradient(135deg, var(--ddu-lavanda) 0%, var(--ddu-aqua) 100%);
+}
+
+/* Definición de familias tipográficas */
+.font-area-inktrap {
+    /* Fallback mientras se configura Adobe Fonts */
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.font-lato {
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-zuume {
+    /* Fallback mientras se configura Adobe Fonts */
+    font-family: 'Oswald', 'Arial Black', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+/* Clases de utilidad para colores */
+.text-ddu-lavanda { color: var(--ddu-lavanda); }
+.text-ddu-aqua { color: var(--ddu-aqua); }
+.bg-ddu-lavanda { background-color: var(--ddu-lavanda); }
+.bg-ddu-aqua { background-color: var(--ddu-aqua); }
+.border-ddu-lavanda { border-color: var(--ddu-lavanda); }
+.border-ddu-aqua { border-color: var(--ddu-aqua); }
+
+/* Gradient background */
+.bg-ddu-gradient {
+    background: var(--ddu-gradient);
+}
